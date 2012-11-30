@@ -64,7 +64,6 @@
 
 body {
   font-family: Helvetica;
-  background-image:url('images/stain.png');
 }
 
 /* Styles */
@@ -102,6 +101,7 @@ body {
   text-align: center;
   font-family: 'geared_slabextrabold';
   font-size: 200%;
+  text-transform: capitalize;
 }
 
 .submitbutton {
@@ -159,6 +159,7 @@ textarea {
   transition: border linear .2s,box-shadow linear .2s;
   border-radius: 5px;
   padding: 10px;
+  resize: none;
 }
 
 textarea:focus {
