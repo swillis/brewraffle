@@ -69,7 +69,7 @@ body {
 /* Styles */
 #masthead {
   text-align: center;
-  /*margin-top: 50px;*/
+  margin-top: -25px;
 }
 
 .title {
@@ -100,7 +100,7 @@ body {
   color: #262626;
   text-align: center;
   font-family: 'geared_slabextrabold';
-  font-size: 200%;
+  font-size: 300%;
   text-transform: capitalize;
 }
 
@@ -187,4 +187,16 @@ textarea:focus {
 
 .twitterlink:hover {
   color: #1acafb;
+}
+
+.resetbutton {
+  text-decoration: none;
+  color: #818181;
+  -webkit-transition: all linear 0.2s;
+  font-family: 'geared_slabthin';
+  font-size: 75%;
+}
+
+.resetbutton:hover {
+  color: #f44a56;
 }
