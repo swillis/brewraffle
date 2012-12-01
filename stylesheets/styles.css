@@ -64,7 +64,6 @@
 
 body {
   font-family: Helvetica;
-  background-image:url('images/stain.png');
 }
 
 /* Styles */
@@ -102,6 +101,7 @@ body {
   text-align: center;
   font-family: 'geared_slabextrabold';
   font-size: 200%;
+  text-transform: capitalize;
 }
 
 .submitbutton {
@@ -159,9 +159,32 @@ textarea {
   transition: border linear .2s,box-shadow linear .2s;
   border-radius: 5px;
   padding: 10px;
+  resize: none;
 }
 
 textarea:focus {
   outline: none;
   -webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  text-align: center;
+  color: #666666;
+  font-family: 'geared_slabthin';
+  font-size: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
+
+.twitterlink {
+  text-decoration: none;
+  color: #666666;
+  -webkit-transition: all linear 0.2s;
+  font-family: 'geared_slabregular';
+}
+
+.twitterlink:hover {
+  color: #1acafb;
 }

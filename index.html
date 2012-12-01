@@ -2,27 +2,27 @@
 <html>
   <head>
     <title>Brew Raffle</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet/normalizecss.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalizecss.css">
     <link href="stylesheets/styles.css" rel="stylesheet" type-"text/css" />
   </head>
   <body>
     <header id="masthead">
-      <div class="container clearfix">
+      <div class="clearfix">
         <h1 class="title">Brew Raffle.</h1>
         <h2 class="subtitle">The beginning of the end of tea making squabbles.</h2>
       </div>
     </header>
-    <div id="brew_raffle" class="container">
+    <div id="brew_raffle">
       <form class="text_box enterbrewer" onSubmit="javascript:chooseBrewer(); return false" />
-        <textarea id="brewers"></textarea>
+        <textarea id="brewers" placeholder="Hit return to separate names."></textarea>
         <br>
         <input class="submitbutton" type="submit" value="Draw!">
       </form>
       <!--div id="previous_brewers">
       </div-->
     </div>
-    <div id="result" class="container">
-      <div class="container clearfix">
+    <div id="result">
+      <div class="clearfix">
         <div id="gearoid">
           <h2 class="resulting">
           And the brewer is... <br>
@@ -30,12 +30,27 @@
           </span>
           <h2/>
         </div>
-        
       </div>
+    </div>
+    <div>
+      <p class="footer">Got feedback? Send to <a class="twitterlink" href="https://twitter.com/thesamwillis">@thesamwillis</a>.</P>
     </div>
     <script src="scripts/jquery.js" type="text/javascript"></script>
     <script src="scripts/brewerscript.js" type="text/javascript"></script>
-
     <script src="scripts/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36663812-1']);
+      _gaq.push(['_setDomainName', 'github.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
   </body>
 </html>
