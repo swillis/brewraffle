@@ -135,6 +135,7 @@ body {
 #gearoid {
   text-align: center;
   display: none;
+  outline: none;
 }
 
 .resulting {
