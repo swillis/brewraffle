@@ -195,9 +195,42 @@ textarea:focus {
   color: #818181;
   -webkit-transition: all linear 0.2s;
   font-family: 'geared_slabthin';
-  font-size: 75%;
+  font-size: 50%;
+  margin-top: -90px;
 }
 
 .resetbutton:hover {
   color: #f44a56;
+}
+
+.facebook_button {
+  -webkit-transition:opacity .2s ease-out;
+  -moz-transition:opacity .2s ease-out;
+  -ms-transition:opacity .2s ease-out;
+  -o-transition:opacity .2s ease-out;
+  transition:opacity .2s ease-out;
+}
+
+.facebook_button:hover {
+  opacity:0.2;
+}
+
+.twitter_button {
+  -webkit-transition:opacity .2s ease-out;
+  -moz-transition:opacity .2s ease-out;
+  -ms-transition:opacity .2s ease-out;
+  -o-transition:opacity .2s ease-out;
+  transition:opacity .2s ease-out;
+}
+
+.twitter_button:hover {
+  opacity:0.2;
+}
+
+.twitter_button, .facebook_button {
+  margin-top: -10px;
+}
+
+.mytwitter {
+  margin-top: -10px;
 }
