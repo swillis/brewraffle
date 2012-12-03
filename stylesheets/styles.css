@@ -64,6 +64,7 @@
 
 body {
   font-family: Helvetica;
+  height: 100%;
 }
 
 /* Styles */
@@ -89,6 +90,7 @@ body {
 }
 
 #result {
+  min-height: 100%;
 }
 
 .enterbrewer {
@@ -141,7 +143,6 @@ body {
 .resulting {
   font-family: 'geared_slabthin';
   color: #666666;
-  margin-bottom: 20px;
 }
 
 #target {
@@ -168,15 +169,22 @@ textarea:focus {
   -webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.2);
 }
 
+.clearfooter {
+  display: block;
+  height: 100px;
+}
+
 .footer {
   text-align: center;
   color: #666666;
   font-family: 'geared_slabthin';
   font-size: 100%;
-  bottom: 0;
-  right: 0;
-  left: 0;
   position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  height: 80px;
+  padding-bottom: 20px;
 }
 
 .twitterlink {
@@ -247,3 +255,4 @@ textarea:focus {
 .resetbutton:hover {
    opacity : 1 ; 
 }
+
