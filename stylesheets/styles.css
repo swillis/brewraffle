@@ -87,6 +87,7 @@ body {
 
 #brew_raffle {
   margin-top: 50px;
+  text-align: center;
 }
 
 #result {
@@ -110,7 +111,7 @@ body {
   height: 50px;
   background: #f44a56;
   -webkit-transition: all linear 0.2s;
-  -webkit-border-radius: 10px;
+  -webkit-border-radius: 5px;
   padding-top: 10px;
   text-align: center;
   font-family: 'geared_slabextrabold';
@@ -146,26 +147,6 @@ body {
 
 #target {
   display: none;
-}
-
-textarea {
-  background-color: white;
-  border: 1px solid #CCC;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border linear .2s,box-shadow linear .2s;
-  -moz-transition: border linear .2s,box-shadow linear .2s;
-  -o-transition: border linear .2s,box-shadow linear .2s;
-  transition: border linear .2s,box-shadow linear .2s;
-  border-radius: 5px;
-  padding: 10px;
-  resize: none;
-}
-
-textarea:focus {
-  outline: none;
-  -webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.2);
 }
 
 .clearfooter {
@@ -255,3 +236,60 @@ textarea:focus {
    opacity : 1 ; 
 }
 
+#new-name {
+  width: 350px;
+  height: 40px;
+  -webkit-border-radius: 5px;
+  /*padding-top: 10px;
+  text-align: center;
+  font-family: 'geared_slabextrabold';
+  cursor: pointer;
+  -webkit-appearance: none;
+  border: 0;
+  font-size: 125%;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  color: white;*/
+  background-color: white;
+  border: 1px solid #CCC;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  padding: 10px;
+  resize: none;
+}
+
+textarea {
+  background-color: white;
+  border: 1px solid #CCC;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear .2s,box-shadow linear .2s;
+  -moz-transition: border linear .2s,box-shadow linear .2s;
+  -o-transition: border linear .2s,box-shadow linear .2s;
+  transition: border linear .2s,box-shadow linear .2s;
+  border-radius: 5px;
+  padding: 10px;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+  -webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.addName {
+  background-color: #278EC1;
+  width: 100px;
+  height: 60px;
+}
+
+.raffleButton {
+
+}
+
+.destroy {
+  width: 50px;
+  height: 50px;
+}

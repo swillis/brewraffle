@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/normalizecss.css">
     <link href="stylesheets/styles.css" rel="stylesheet" type-"text/css" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
   </head>
   <body>
@@ -14,12 +14,15 @@
       <h2 class="subtitle">The beginning of the end of tea making squabbles.</h2>
     </header>
     <div id="brew_raffle">
-            <input name="new-candidate-name" id="new-name" type="text" placeholder="Stop writing JS" value=""/>
-      <input type="button" value="submit" name="submit" id="gogogo"/>
+      <div id='nameField'>
+        <input name="new-candidate-name" id="new-name" type="text" placeholder="Enter rafflers" value=""/>
+        <input type="button" value="submit" name="submit" id="gogogo" class='submitbutton addName' />
+      </div>
       <div id="message"></div>
     <ul id="name-list">
     </ul>
-    <input class="submitbutton" type="submit" onSubmit="javascript:chooseBrewer(); return false" />
+    <p id="the_brewer"></p>
+    <input type="button" onclick='chooseBrewer()' value='what' class='submitbutton raffleButton' />​
 <!--       <form class="text_box enterbrewer" onSubmit="javascript:chooseBrewer(); return false" />
         <textarea id="brewers" placeholder="Separate names with a new line."></textarea>
         <br>
@@ -32,17 +35,15 @@
     <div id="result" class="clearfix">
       <div class="clearfix">
         <div id="gearoid">
-          <h2 class="resulting">
+          <!--h2 class="resulting">
           And the brewer is... <br>
           <span id="the_brewer">
-          </span>
+          </span-->
           <h2/>
         </div>
       </div>
-      <div class="clearfooter">
-      </div>
     </div>
-    <div class="footer">
+<!--     <div class="footer">
       <div class="sharing">
         <p>Sharing is nice.</p>
         <a href="https://www.facebook.com/pages/Brew-Raffle/508191409214078?ref=hl" target="_blank"><img class="facebook_button" src="images/facebook.png"></a>
@@ -51,7 +52,7 @@
       <div class="mytwitter">
         <p>Got feedback? Send to <a class="twitterlink" href="https://twitter.com/intent/user?screen_name=thesamwillis">@thesamwillis</a>.</P>
       </div>
-    </div>
+    </div> -->
     <script src="scripts/brewerscript.js" type="text/javascript"></script>
     <script src="scripts/bootstrap.min.js" type="text/javascript"></script>
     <script type="text/javascript">
