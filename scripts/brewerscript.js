@@ -11,7 +11,6 @@
 // //localStorage["previousBrewers"] = JSON.stringify(previousBrewers)
 
 // document.getElementById("the_brewer").innerHTML = brewer + "."
-document.getElementById("gearoid").style.display = 'block';
 
 // //document.getElementById('previous_brewers').innerHTML = 'Previous brewers were: ' + JSON.parse(localStorage["previousBrewers"])
 
@@ -29,7 +28,7 @@ $(document).ready(function() {
   // Ad it
   $("#gogogo").click(function() {
     var newName = $("#new-name").val();
-  $('#name-list').append("<li class='name'><p>" + newName + "</p><button class='destroy'></button></li>");
+  $('#name-list').append("<li class='name'><p class='names'>" + newName + "</p><button class='destroy'></button></li>");
   $("#new-name").val('');
   });
   // Remove it
@@ -52,3 +51,5 @@ $("#the_brewer").html($(brewer).text() + ".");
 $('new=candidate-name').click(function() {
     chooseBrewer()}
 );
+
+document.getElementById("gearoid").style.display = 'block';

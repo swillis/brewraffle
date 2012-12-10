@@ -11,18 +11,19 @@
   <body>
     <header id="masthead">
       <h1 class="title">Brew Raffle.</h1>
-      <h2 class="subtitle">The beginning of the end of tea making squabbles.</h2>
+      <p class="subtitle">The beginning of the end of tea making squabbles.</p>
     </header>
     <div id="brew_raffle">
       <div id='nameField'>
-        <input name="new-candidate-name" id="new-name" type="text" placeholder="Enter rafflers" value=""/>
-        <input type="button" value="submit" name="submit" id="gogogo" class='submitbutton addName' />
+        <input name="new-candidate-name" id="new-name" type="text" placeholder="Type the brew makers names in here." value=""/>
+        <input type="button" value="Add." name="submit" id="gogogo" class='submitbutton addName' />
       </div>
-      <div id="message"></div>
-    <ul id="name-list">
-    </ul>
+    <div id='raffleEngine'>
+      <ul id="name-list">
+      </ul>
+      <input type="button" onclick='chooseBrewer()' value='Draw.' class='submitbutton raffleButton' />​
+    </div>
     <p id="the_brewer"></p>
-    <input type="button" onclick='chooseBrewer()' value='what' class='submitbutton raffleButton' />​
 <!--       <form class="text_box enterbrewer" onSubmit="javascript:chooseBrewer(); return false" />
         <textarea id="brewers" placeholder="Separate names with a new line."></textarea>
         <br>
@@ -35,10 +36,10 @@
     <div id="result" class="clearfix">
       <div class="clearfix">
         <div id="gearoid">
-          <!--h2 class="resulting">
+          <h2 class="resulting">
           And the brewer is... <br>
           <span id="the_brewer">
-          </span-->
+          </span>
           <h2/>
         </div>
       </div>
@@ -54,7 +55,6 @@
       </div>
     </div> -->
     <script src="scripts/brewerscript.js" type="text/javascript"></script>
-    <script src="scripts/bootstrap.min.js" type="text/javascript"></script>
     <script type="text/javascript">
 
       var _gaq = _gaq || [];

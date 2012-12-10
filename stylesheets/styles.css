@@ -70,7 +70,7 @@ body {
 /* Styles */
 #masthead {
   text-align: center;
-  margin-top: -25px;
+  margin-top: -50px;
 }
 
 .title {
@@ -80,13 +80,14 @@ body {
 }
 
 .subtitle {
-  font-family: 'geared_slabthin';
+  font-family: 'Helvetica';
   color: #666666;
-  margin-top: -85px;
+  margin-top: -90px;
+  width: auto;
+  font-size: 130%;
 }
 
 #brew_raffle {
-  margin-top: 50px;
   text-align: center;
 }
 
@@ -104,29 +105,50 @@ body {
   font-family: 'geared_slabextrabold';
   font-size: 300%;
   text-transform: capitalize;
+  clear: both;
 }
 
 .submitbutton {
   width: 200px;
   height: 50px;
   background: #f44a56;
-  -webkit-transition: all linear 0.2s;
+  -webkit-transition: opacity .3s ease-out;
+  -moz-transition: opacity .3s ease-out;
+  -ms-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
+  transition: opacity .3s ease-out;
+  opacity : 0.75;
   -webkit-border-radius: 5px;
-  padding-top: 10px;
   text-align: center;
-  font-family: 'geared_slabextrabold';
+  font-family: 'Helvetica';
+  font-weight: bolder;
   cursor: pointer;
   -webkit-appearance: none;
   border: 0;
   font-size: 125%;
-  padding-bottom: 5px;
   margin-top: 20px;
   color: white;
+  -webkit-box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 1px 3px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 1px 3px rgba(50, 50, 50, 0.75);
 }
 
 .submitbutton:hover {
-  background: #181818;
+  opacity: 1;
   color: white;
+}
+
+.resetbutton {
+  -webkit-transition: opacity .3s ease-out; 
+  -moz-transition: opacity .3s ease-out; 
+  -ms-transition: opacity .3s ease-out; 
+  -o-transition: opacity .3s ease-out; 
+  transition: opacity .3s ease-out; 
+  opacity : 0.3; 
+}
+
+.resetbutton:hover {
+   opacity : 1; 
 }
 
 #brewers {
@@ -192,11 +214,11 @@ body {
 }
 
 .facebook_button {
-  -webkit-transition:opacity .2s ease-out;
-  -moz-transition:opacity .2s ease-out;
-  -ms-transition:opacity .2s ease-out;
-  -o-transition:opacity .2s ease-out;
-  transition:opacity .2s ease-out;
+  -webkit-transition:opacity .3s ease-out;
+  -moz-transition:opacity .3s ease-out;
+  -ms-transition:opacity .3s ease-out;
+  -o-transition:opacity .3s ease-out;
+  transition:opacity .3s ease-out;
 }
 
 .facebook_button:hover {
@@ -204,11 +226,11 @@ body {
 }
 
 .twitter_button {
-  -webkit-transition:opacity .2s ease-out;
-  -moz-transition:opacity .2s ease-out;
-  -ms-transition:opacity .2s ease-out;
-  -o-transition:opacity .2s ease-out;
-  transition:opacity .2s ease-out;
+  -webkit-transition:opacity .3s ease-out;
+  -moz-transition:opacity .3s ease-out;
+  -ms-transition:opacity .3s ease-out;
+  -o-transition:opacity .3s ease-out;
+  transition:opacity .3s ease-out;
 }
 
 .twitter_button:hover {
@@ -223,24 +245,37 @@ body {
   margin-top: -10px;
 }
 
-.resetbutton {
-  -webkit-transition: opacity .2s ease-out; 
-  -moz-transition: opacity .2s ease-out; 
-  -ms-transition: opacity .2s ease-out; 
-  -o-transition: opacity .2s ease-out; 
-  transition: opacity .2s ease-out; 
-  opacity : 0.3 ; 
-}
-
-.resetbutton:hover {
-   opacity : 1 ; 
-}
 
 #new-name {
-  width: 350px;
+  width: 500px;
   height: 40px;
   -webkit-border-radius: 5px;
-  /*padding-top: 10px;
+  background-color: white;
+  -webkit-box-shadow: inset 0 1px 3px rgba(50, 50, 50, 0.75);
+  padding: 10px;
+  resize: none;
+  font-size: 150%;
+  border: none;
+}
+
+.addName {
+  background-color: #278EC1;
+  width: 100px;
+  height: 80px;
+}
+
+.raffleButton {
+  background: #7fd545;
+  height: 80px;
+  width: 150px;
+  margin-top: 66px;
+  margin-left: -60px;
+}
+
+.destroy {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 5px;
   text-align: center;
   font-family: 'geared_slabextrabold';
   cursor: pointer;
@@ -248,48 +283,64 @@ body {
   border: 0;
   font-size: 125%;
   padding-bottom: 5px;
-  margin-top: 20px;
-  color: white;*/
-  background-color: white;
-  border: 1px solid #CCC;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  padding: 10px;
-  resize: none;
+  color: white;
+  background-color: #F44A5C;
+  margin-top: -57px;
+  margin-left: 370px;
+  position: absolute;
+  -webkit-box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 1px 3px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 1px 3px rgba(50, 50, 50, 0.75);
+  -webkit-transition: opacity .3s ease-out;
+  -moz-transition: opacity .3s ease-out;
+  -ms-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
+  transition: opacity .3s ease-out;
+  opacity : 0.75;
 }
 
-textarea {
-  background-color: white;
-  border: 1px solid #CCC;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border linear .2s,box-shadow linear .2s;
-  -moz-transition: border linear .2s,box-shadow linear .2s;
-  -o-transition: border linear .2s,box-shadow linear .2s;
-  transition: border linear .2s,box-shadow linear .2s;
+.destroy:hover {
+  opacity: 1;
+  color: white;
+}
+
+li {
+  display: inherit;
+}
+
+.names {
+  width: 300px;
+  color: #666666;
+  margin: 20px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 1px 3px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 1px 3px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 1px 3px rgba(50, 50, 50, 0.75);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
-  padding: 10px;
-  resize: none;
+  font-family: 'Helvetica';
+  text-transform: capitalize;
+  font-size: 130%;
 }
 
-textarea:focus {
-  outline: none;
-  -webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.2);
+#raffleEngine {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.addName {
-  background-color: #278EC1;
-  width: 100px;
-  height: 60px;
+#name-list {
+  text-align: left;
+  float: left;
+  width: 450px;
+  margin-left: 80px;
 }
 
-.raffleButton {
-
-}
-
-.destroy {
-  width: 50px;
-  height: 50px;
+.triangle {
+  width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 0 100px 173.2px 100px;
+border-color: transparent transparent #007bff transparent;
 }
