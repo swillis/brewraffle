@@ -267,6 +267,8 @@ body {
   width: 30px;
   height: 30px;
   -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   text-align: center;
   font-family: 'Helvetica';
   cursor: pointer;
