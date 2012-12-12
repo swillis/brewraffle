@@ -28,8 +28,11 @@ $(document).ready(function() {
   // Ad it
   $("#gogogo").click(function() {
     var newName = $("#new-name").val();
-  $('#name-list').append("<li class='name'><p class='names'>" + newName + "</p><button class='destroy'></button></li>");
+  $('#name-list').append("<li class='name'><p class='names'>" + newName + "</p><input type='button' class='destroy' value='X' /></li>");
   $("#new-name").val('');
+  $('.raffleButton').show();
+  $('#new-name').focus();
+  // $('.name').hide().fadeIn(1000);
   });
   // Remove it
   $('.destroy').live('click', function() {
@@ -46,10 +49,17 @@ var brewer = brewers[Math.floor(Math.random()*brewers.length)];
 
 $("#the_brewer").html($(brewer).text() + ".");
 
-}
+document.getElementById("brewerIs").style.display = 'block';
+document.getElementById("reset").style.display = 'block';
 
-$('new=candidate-name').click(function() {
-    chooseBrewer()}
+$('html, body').animate({ 
+   scrollTop: $(document).height()-$(window).height()}, 
+   1400, 
+   "easeOutQuint"
 );
 
-document.getElementById("gearoid").style.display = 'block';
+}
+
+$('new-candidate-name').click(function() {
+    chooseBrewer()}
+);
