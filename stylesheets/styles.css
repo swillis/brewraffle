@@ -169,6 +169,7 @@ body {
   margin-top: 20px;
   font-size: 130%;
   font-family: 'Helvetica';
+  clear: both;
 }
 
 .resulting {
@@ -352,7 +353,15 @@ li {
 }
 
 #reset:hover {
-  color: #262626;
+  color: #F44A5C;
+}
+
+#feedback {
+  text-align: center;
+  color: #666666;
+  font-family: 'geared_slabthin';
+  font-size: 100%;
+  display: none;
 }
 
 /*.triangle {
