@@ -169,6 +169,7 @@ body {
   margin-top: 20px;
   font-size: 130%;
   font-family: 'Helvetica';
+  clear: both;
 }
 
 .resulting {
@@ -267,6 +268,8 @@ body {
   width: 30px;
   height: 30px;
   -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   text-align: center;
   font-family: 'Helvetica';
   cursor: pointer;
@@ -350,7 +353,15 @@ li {
 }
 
 #reset:hover {
-  color: #262626;
+  color: #F44A5C;
+}
+
+#feedback {
+  text-align: center;
+  color: #666666;
+  font-family: 'geared_slabthin';
+  font-size: 100%;
+  display: none;
 }
 
 /*.triangle {

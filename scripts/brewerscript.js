@@ -1,28 +1,4 @@
-// function chooseBrewer(){
-// //brewers = document.getElementById('brewers').value.split("\n")
-// // Maybe new way to add to list?
-// brewers = document.getElementById('name-list').getElementsByTagName('li').value;
-// brewer = brewers[Math.floor(Math.random()*brewers.length)];
-
-// //previousBrewers = JSON.parse(localStorage['previousBrewers'] || "[]")
-
-// //previousBrewers.push(brewer)
-
-// //localStorage["previousBrewers"] = JSON.stringify(previousBrewers)
-
-// document.getElementById("the_brewer").innerHTML = brewer + "."
-
-// //document.getElementById('previous_brewers').innerHTML = 'Previous brewers were: ' + JSON.parse(localStorage["previousBrewers"])
-
-// //return false;
-// }
-
-//Add list items to array
-
-// $(function(){
-//   var brewers = $("#name-list li").map(function(){
-//   return $(this).text();}).get().join(',');
-// })
+    // Brewer Script //
 
 $(document).ready(function() {
   // Ad it
@@ -30,8 +6,9 @@ $(document).ready(function() {
     var newName = $("#new-name").val();
   $('#name-list').append("<li class='name'><p class='names'>" + newName + "</p><input type='button' class='destroy' value='X' /></li>");
   $("#new-name").val('');
-  $('.raffleButton').show();
+  $('.raffleButton').slideDown('100');
   $('#new-name').focus();
+  return false;
   // $('.name').hide().fadeIn(1000);
   });
   // Remove it
@@ -47,10 +24,12 @@ var brewers = $('li');
 
 var brewer = brewers[Math.floor(Math.random()*brewers.length)];
 
-$("#the_brewer").html($(brewer).text() + ".");
+$("#the_brewer").html($(brewer).text() + ".").hide().fadeIn(800);
 
-document.getElementById("brewerIs").style.display = 'block';
-document.getElementById("reset").style.display = 'block';
+$('#brewerIs').hide().fadeIn(100);
+$('#feedback').delay(500).fadeIn(400);
+// document.getElementById("brewerIs").style.display = 'block';
+// document.getElementById("reset").style.display = 'block';
 
 $('html, body').animate({ 
    scrollTop: $(document).height()-$(window).height()}, 
@@ -63,3 +42,16 @@ $('html, body').animate({
 $('new-candidate-name').click(function() {
     chooseBrewer()}
 );
+
+// //previousBrewers = JSON.parse(localStorage['previousBrewers'] || "[]")
+
+// //previousBrewers.push(brewer)
+
+// //localStorage["previousBrewers"] = JSON.stringify(previousBrewers)
+
+// document.getElementById("the_brewer").innerHTML = brewer + "."
+
+// //document.getElementById('previous_brewers').innerHTML = 'Previous brewers were: ' + JSON.parse(localStorage["previousBrewers"])
+
+// //return false;
+// }
