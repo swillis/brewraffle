@@ -6,13 +6,15 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/normalizecss.css">
     <link href="stylesheets/styles.css" rel="stylesheet" type-"text/css" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu|Rokkitt' rel='stylesheet' type='text/css'>
+    <link href='scripts/bootstrap.min.js' rel='stylesheet' type='javascript'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
   </head>
   <body>
     <header id="masthead">
       <h1 class="title">Brew Raffle.</h1>
-      <p class="subtitle">The beginning of the end of tea making squabbles.</p><br>
+      <img src="images/brewRaffleLogo.png">
     </header>
     <div id='social'>
       <a href="https://twitter.com/share" class="twitter-share-button twitterButton" data-url="http://raffle.io" data-text="I've just played Brew Raffle! The solution to all of your tea troubles! Check it out at:" data-related="thesamwillis">Tweet</a>
@@ -21,21 +23,13 @@
     <div id="brew_raffle">
       <form id='nameField'>
         <input name="new-candidate-name" id="new-name" type="text" placeholder="Enter a brew maker..." value=""/>
-        <input type="submit" value="Add." name="submit" id="gogogo" class='submitbutton addName'/>
+        <input type="submit" value="Add." name="submit" id="addName" class='submitbutton addName'/>
       </form>
-    <div id='raffleEngine'>
-      <ul id="name-list">
-      </ul>
-      <input type="button" onclick='chooseBrewer()' value='Draw.' class='submitbutton raffleButton' />​
-    </div>
-<!--       <form class="text_box enterbrewer" onSubmit="javascript:chooseBrewer(); return false" />
-        <textarea id="brewers" placeholder="Separate names with a new line."></textarea>
-        <br>
-        <input class="submitbutton" type="submit" value="Draw!">
-        <a class="resetbutton" href="javascript:history.go(0)" alt="Reset"><img src="images/resetbutton.png"></a>
-      </form> -->
-      <!--div id="previous_brewers">
-      </div-->
+      <div id='raffleEngine'>
+        <ul id="name-list">
+        </ul>
+        <input type="button" onclick='chooseBrewer()' value='Draw.' class='raffleButton' />​
+      </div>
     </div>
     <div id="result" class="clearfix">
       <div class="clearfix">

@@ -1,0 +1,94 @@
+/* CSS Document  */
+
+body {
+	background-color: #77cc33;
+	font-family: Ubuntu;
+	text-align: center;
+}
+
+.title {
+	display: none;
+}
+
+#nameField {
+	position: relative;
+	width: 600px;
+	margin: 0 auto;
+}
+
+#new-name {
+  width: 500px;
+  height: 40px;
+  background-color: white;
+  padding: 10px 10px 10px 25px;
+  resize: none;
+  font-size: 150%;
+  -webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+  background-color: #ffffff;
+  border: 10px solid #48940b;
+  outline: none;
+}
+
+#addName {
+  width: 80px;
+  height: 80px;
+  background: #77cc33;
+  cursor: pointer;
+  border: 10px solid #48940b;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	color: white;
+	position: absolute;
+	right: 22px;
+}
+
+#raffleEngine {
+	width: 600px;
+	margin: 0 auto;
+	list-style: none;
+	position: relative;
+}
+
+#name-list {
+	list-style: none;
+}
+
+.names {
+	height: 40px;
+	width: 450px;
+  color: white;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background-color: #57af10;
+  text-align: left;
+  padding-left: 25px;
+	padding-top: 20px;
+	text-transform: capitalize;
+}
+
+.name {
+	margin-left: 25px;
+}
+
+
+.destroy {
+	width: 46px;
+  height: 46px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-appearance: none;
+  border: 0;
+  padding-bottom: 5px;
+  color: white;
+  background-color: #48940b;
+  position: absolute;
+  margin-top: -69px;
+	margin-left: 420px;
+}

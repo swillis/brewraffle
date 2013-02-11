@@ -1,10 +1,10 @@
     // Brewer Script //
 
 $(document).ready(function() {
-  $addButton = $('#gogogo')
+  $addButton = $('#addName')
   
   // Add it
-  $("#gogogo").click(function() {
+  $("#addName").click(function() {
     if ($('#new-name').val().length == 0) {
       return false
     }
