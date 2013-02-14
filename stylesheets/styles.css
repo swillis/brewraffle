@@ -169,11 +169,12 @@ body {
 
 .twitterlink {
   color: white;
+  text-decoration: none;
+  -webkit-transition: .5s;
 }
 
 .twitterlink:hover {
   color: green;
-  text-decoration: none;
 }
 
 

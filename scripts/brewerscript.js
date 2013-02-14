@@ -12,9 +12,9 @@ $(document).ready(function() {
     var newName = $("#new-name").val();
     $('#name-list').append("<li class='name'><p class='names'>" + newName + "</p><input type='button' class='destroy' value='X' /></li>");
     $("#new-name").val('');
-    $('.raffleButton').fadeIn('1000');
+    $('.raffleButton').delay(400).fadeIn('1000');
     $('#new-name').focus();
-    $('.name').fadeIn(1000);
+    $('.name').fadeIn(500);
     return false;
   });
 
