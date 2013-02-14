@@ -1,21 +1,21 @@
     // Brewer Script //
 
 $(document).ready(function() {
-  $addButton = $('#addName')
+  $addButton = $('#addName');
   
   // Add it
   $("#addName").click(function() {
     if ($('#new-name').val().length == 0) {
-      return false
+      return false;
     }
 
     var newName = $("#new-name").val();
     $('#name-list').append("<li class='name'><p class='names'>" + newName + "</p><input type='button' class='destroy' value='X' /></li>");
     $("#new-name").val('');
-    $('.raffleButton').slideDown('100');
+    $('.raffleButton').fadeIn('1000');
     $('#new-name').focus();
+    $('.name').fadeIn(1000);
     return false;
-    // $('.name').hide().fadeIn(1000);
   });
 
   // Remove it
@@ -24,16 +24,22 @@ $(document).ready(function() {
   });
 })
 
+
+
+
+
+
+
 function chooseBrewer(event){
   var brewList = $('#name-list');
   var brewers = $('li');
 
   var brewer = brewers[Math.floor(Math.random()*brewers.length)];
 
-  $("#the_brewer").html($(brewer).text() + ".").hide().fadeIn(800);
+  $("#the_brewer").html($(brewer).text()).hide().fadeIn(1500);
 
   $('#brewerIs').hide().fadeIn(100);
-  $('#feedback').delay(500).fadeIn(400);
+  $('#feedback').fadeIn(400);
   // document.getElementById("brewerIs").style.display = 'block';
   // document.getElementById("reset").style.display = 'block';
 

@@ -10,15 +10,23 @@ body {
 	display: none;
 }
 
+#masthead {
+  margin: -40px 0px -20px 0px;
+}
+
+#social {
+  margin: 0px 0px 20px 0px;
+}
+
 #nameField {
 	position: relative;
-	width: 600px;
+	width: 700px;
 	margin: 0 auto;
 }
 
 #new-name {
-  width: 500px;
-  height: 40px;
+  width: 600px;
+  height: 50px;
   background-color: white;
   padding: 10px 10px 10px 25px;
   resize: none;
@@ -27,22 +35,30 @@ body {
 	-moz-border-radius: 50px;
 	border-radius: 50px;
   background-color: #ffffff;
-  border: 10px solid #48940b;
+  border: 6px solid #48940b;
   outline: none;
+  margin: 0px 0px 10px 0px;
 }
 
 #addName {
-  width: 80px;
-  height: 80px;
+  width: 82px;
+  height: 82px;
   background: #77cc33;
   cursor: pointer;
-  border: 10px solid #48940b;
+  border: 6px solid #48940b;
 	-webkit-border-radius: 50px;
 	-moz-border-radius: 50px;
 	border-radius: 50px;
 	color: white;
 	position: absolute;
-	right: 22px;
+	right: 25px;
+  -webkit-transition: .4s ease;
+  font-family: ModernPictogramsNormal;
+  font-size: 3em;
+}
+
+#addName:hover {
+  background-color: #48940b;
 }
 
 #raffleEngine {
@@ -68,10 +84,16 @@ body {
   padding-left: 25px;
 	padding-top: 20px;
 	text-transform: capitalize;
+  -webkit-transition: all .2s;
+}
+
+.names:hover {
+  opacity: .8;
 }
 
 .name {
 	margin-left: 25px;
+  display: none;
 }
 
 
@@ -85,10 +107,76 @@ body {
   cursor: pointer;
   -webkit-appearance: none;
   border: 0;
-  padding-bottom: 5px;
   color: white;
   background-color: #48940b;
   position: absolute;
   margin-top: -69px;
-	margin-left: 420px;
+	margin-left: 421px;
+  -webkit-transition: .5s;
+  font-family: ModernPictogramsNormal;
+  font-size: 2em;
 }
+
+.destroy:hover {
+  background-color: #77cc33;
+}
+
+.raffleButton {
+  display: none;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-appearance: none;
+  border: 0;
+  color: white;
+  background-color: #77cc33;
+  border: 7px solid #48940b;
+  -webkit-transition: background-color .4s ease;
+  -moz-transition: background-color .4s ease;
+  transition: background-color .4s ease;
+  font-family: ModernPictogramsNormal;
+  font-size: 3em;
+  padding: 5px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
+}
+
+.raffleButton:hover {
+  background-color: #48940b;
+}
+
+#brewerIs {
+  display: none;
+  color: #48940b;
+  font-size: 110%;
+}
+
+#the_brewer {
+  color: white;
+  font-size: 5em;
+  text-transform: capitalize;
+  margin: -10px 0px 25px 0px;
+}
+
+#feedback {
+  display: none;
+  color: #48940b;
+  font-size: 110%;
+}
+
+.twitterlink {
+  color: white;
+}
+
+.twitterlink:hover {
+  color: green;
+  text-decoration: none;
+}
+
+
+
+
+
