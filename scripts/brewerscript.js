@@ -19,14 +19,20 @@ $(document).ready(function() {
   });
 
   // Remove it
-  $('.destroy').live('click', function() {
-    $(this).parents("li.name").remove();
+  // $('.destroy').live('click', function() {
+  //   $('.name').fadeOut(500);
+  //   $(this).parents("li.name").remove();
+  // });
+
+$('.destroy').live('click', function() {
+  $(this).parents("li.name").fadeOut(500,function() { 
+    $(this).parents("li.name", ".destroy").remove();
   });
+});
+
+
+
 })
-
-
-
-
 
 
 
@@ -40,6 +46,7 @@ function chooseBrewer(event){
 
   $('#brewerIs').hide().fadeIn(100);
   $('#feedback').fadeIn(400);
+  $('.reset').fadeIn(400);
   // document.getElementById("brewerIs").style.display = 'block';
   // document.getElementById("reset").style.display = 'block';
 
