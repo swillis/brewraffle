@@ -20,13 +20,12 @@ $(document).ready(function() {
 
   // Remove it
   // $('.destroy').live('click', function() {
-  //   $('.name').fadeOut(500);
   //   $(this).parents("li.name").remove();
   // });
 
 $('.destroy').live('click', function() {
   $(this).parents("li.name").fadeOut(500,function() { 
-    $(this).parents("li.name", ".destroy").remove();
+    $(this).remove();
   });
 });
 
@@ -57,10 +56,9 @@ function chooseBrewer(event){
   );
 }
 
-$('new-candidate-name').click(function(e) {
-    chooseBrewer(e)}
-);
-
+$('.reset').click(function() {
+    location.reload();
+});
 
 // //previousBrewers = JSON.parse(localStorage['previousBrewers'] || "[]")
 

@@ -82,7 +82,7 @@ body {
   background-color: #57af10;
   text-align: left;
   padding-left: 25px;
-	padding-top: 25px;
+	padding-top: 28px;
 	text-transform: capitalize;
   -webkit-transition: all .2s;
 }
@@ -109,7 +109,7 @@ body {
   color: white;
   background-color: #48940b;
   position: absolute;
-  margin-top: -76px;
+  margin-top: -77px;
 	margin-left: 465px;
   -webkit-transition: .5s;
   font-family: ModernPictogramsNormal;
@@ -148,7 +148,7 @@ body {
 }
 
 #result {
-  margin-bottom: 10px;
+  height: 250px;
 }
 
 #brewerIs {
@@ -182,11 +182,26 @@ body {
 
 .reset {
   display: none;
-  text-decoration: none;
-  -webkit-transition: .5s ease-out;
-  color: #57af10;
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-appearance: none;
+  color: white;
+  background-color: #77cc33;
+  border: 6px solid #48940b;
+  -webkit-transition: background-color .3s ease;
+  -moz-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+  font-family: ModernPictogramsNormal;
+  font-size: 2em;
+  padding: 0px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
 }
 
 .reset:hover {
-  color: #48940b;
+  background-color: #48940b;
 }
