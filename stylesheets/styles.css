@@ -204,4 +204,211 @@ body {
 
 .reset:hover {
   background-color: #48940b;
+=======
+/* CSS Document  */
+
+body {
+  background-color: #77cc33;
+  font-family: Ubuntu;
+  text-align: center;
+}
+
+.title {
+  display: none;
+}
+
+#masthead {
+  margin: -40px 0px -20px 0px;
+}
+
+#social {
+  margin: 0px 0px 20px 0px;
+}
+
+#nameField {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+}
+
+#new-name {
+  width: 500px;
+  height: 50px;
+  background-color: white;
+  padding: 10px 10px 10px 25px;
+  resize: none;
+  font-size: 150%;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  border: 6px solid #48940b;
+  outline: none;
+  margin: 0px 0px 10px 0px;
+}
+
+#addName {
+  width: 82px;
+  height: 82px;
+  background: #77cc33;
+  cursor: pointer;
+  border: 6px solid #48940b;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  color: white;
+  position: absolute;
+  right: 25px;
+  -webkit-transition: .4s ease;
+  font-family: ModernPictogramsNormal;
+  font-size: 3em;
+}
+
+#addName:hover {
+  background-color: #48940b;
+}
+
+#raffleEngine {
+  width: 600px;
+  margin: 0 auto;
+  list-style: none;
+  position: relative;
+}
+
+#name-list {
+  list-style: none;
+}
+
+.names {
+  height: 45px;
+  width: 500px;
+  color: white;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background-color: #57af10;
+  text-align: left;
+  padding-left: 25px;
+  padding-top: 28px;
+  text-transform: capitalize;
+  -webkit-transition: all .2s;
+}
+
+.names:hover {
+  opacity: .8;
+}
+
+.name {
+  display: none;
+}
+
+
+.destroy {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-appearance: none;
+  border: 0;
+  color: white;
+  background-color: #48940b;
+  position: absolute;
+  margin-top: -77px;
+  margin-left: 465px;
+  -webkit-transition: .5s;
+  font-family: ModernPictogramsNormal;
+  font-size: 2em;
+}
+
+.destroy:hover {
+  background-color: #77cc33;
+}
+
+.raffleButton {
+  display: none;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-appearance: none;
+  border: 0;
+  color: white;
+  background-color: #77cc33;
+  border: 6px solid #48940b;
+  -webkit-transition: background-color .3s ease;
+  -moz-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+  font-family: ModernPictogramsNormal;
+  font-size: 3em;
+  padding: 5px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
+}
+
+.raffleButton:hover {
+  background-color: #48940b;
+}
+
+#result {
+  height: 250px;
+}
+
+#brewerIs {
+  display: none;
+  color: #48940b;
+  font-size: 110%;
+}
+
+#the_brewer {
+  color: white;
+  font-size: 5em;
+  text-transform: capitalize;
+  margin: -10px 0px 25px 0px;
+}
+
+#feedback {
+  display: none;
+  color: #48940b;
+  font-size: 110%;
+}
+
+.twitterlink {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: .3s ease-out;
+}
+
+.twitterlink:hover {
+  color: #57af10;
+}
+
+.reset {
+  display: none;
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-appearance: none;
+  color: white;
+  background-color: #77cc33;
+  border: 6px solid #48940b;
+  -webkit-transition: background-color .3s ease;
+  -moz-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+  font-family: ModernPictogramsNormal;
+  font-size: 2em;
+  padding: 0px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
+}
+
+.reset:hover {
+  background-color: #48940b;
 }
