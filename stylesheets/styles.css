@@ -110,7 +110,7 @@ body {
   background-color: #48940b;
   position: absolute;
   margin-top: -77px;
-	margin-left: 465px;
+	margin-left: 180px;
   -webkit-transition: .5s;
   font-family: ModernPictogramsNormal;
   font-size: 2em;
@@ -118,6 +118,7 @@ body {
 
 .destroy:hover {
   background-color: #77cc33;
+  color: #48940b;
 }
 
 .raffleButton {
